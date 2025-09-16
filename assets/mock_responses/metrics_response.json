@@ -1,0 +1,31 @@
+{
+  "isSuccessful": true,
+  "code": 200,
+  "data": [
+    {
+      "title": "Score",
+      "icon": "assets/svgs/Star.svg",
+      "chart": "assets/svgs/BarArea.svg",
+      "percentage": "88",
+      "unit": "%",
+      "color": "0xFFFF4D00"
+    },
+    {
+      "title": "Hydration",
+      "icon": "assets/svgs/Star.svg",
+      "chart": "assets/svgs/LineArea.svg",
+      "percentage": "781",
+      "unit": "ml",
+      "color": "0xFF0000FF"
+    },
+    {
+      "title": "Calories",
+      "icon": "assets/svgs/Star.svg",
+      "chart": "assets/svgs/MainChart.svg",
+      "percentage": "132",
+      "unit": "ltr",
+      "color": "0xFF808080"
+    }
+  ],
+  "message": "Metrics retrieved successfully"
+}

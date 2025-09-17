@@ -43,7 +43,7 @@ class _TabbedHomeState extends ConsumerState<TabbedHome> {
                 icon:
                 indexTracker == 0
                     ? SelectedTabIcon(icon: "assets/svgs/Home.svg")
-                    : SvgPicture.asset("assets/svgs/Home.svg"),
+                    : SvgPicture.asset("assets/svgs/Home.svg", colorFilter: ColorFilter.mode(Palette.grey, BlendMode.srcIn),),
                 onPressed: () {
                   ref
                       .read(tabIndexTrackerProvider.notifier)
@@ -54,7 +54,7 @@ class _TabbedHomeState extends ConsumerState<TabbedHome> {
                 icon:
                 indexTracker == 1
                     ? SelectedTabIcon(icon: "assets/svgs/Gymnastics.svg")
-                    : SvgPicture.asset("assets/svgs/Gymnastics.svg"),
+                    : SvgPicture.asset("assets/svgs/Gymnastics.svg", colorFilter: ColorFilter.mode(Palette.grey, BlendMode.srcIn),),
                 onPressed: () {
                   ref
                       .read(tabIndexTrackerProvider.notifier)
@@ -66,7 +66,7 @@ class _TabbedHomeState extends ConsumerState<TabbedHome> {
                 icon:
                 indexTracker == 2
                     ? SelectedTabIcon(icon: "assets/svgs/Fastfood.svg")
-                    : SvgPicture.asset("assets/svgs/Fastfood.svg"),
+                    : SvgPicture.asset("assets/svgs/Fastfood.svg", colorFilter: ColorFilter.mode(Palette.grey, BlendMode.srcIn),),
                 onPressed: () {
                   ref
                       .read(tabIndexTrackerProvider.notifier)
@@ -77,7 +77,7 @@ class _TabbedHomeState extends ConsumerState<TabbedHome> {
                 icon:
                 indexTracker == 3
                     ? SelectedTabIcon(icon: "assets/svgs/Profile.svg")
-                    : SvgPicture.asset("assets/svgs/Profile.svg"),
+                    : SvgPicture.asset("assets/svgs/Profile.svg", colorFilter: ColorFilter.mode(Palette.grey, BlendMode.srcIn),),
                 onPressed: () {
                   ref
                       .read(tabIndexTrackerProvider.notifier)

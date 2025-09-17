@@ -6,12 +6,12 @@ part of 'metrics_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$getMetricsHash() => r'0aa78fddd837e9890bfaf33450ca235248d86666';
+String _$getMetricsHash() => r'fa23dfbc365680e83a486cab6cae6af78deabb05';
 
 /// See also [GetMetrics].
 @ProviderFor(GetMetrics)
 final getMetricsProvider =
-    AutoDisposeNotifierProvider<GetMetrics, AsyncValue<List<Metrics>>>.internal(
+    NotifierProvider<GetMetrics, AsyncValue<List<Metrics>>>.internal(
       GetMetrics.new,
       name: r'getMetricsProvider',
       debugGetCreateSourceHash:
@@ -22,6 +22,6 @@ final getMetricsProvider =
       allTransitiveDependencies: null,
     );
 
-typedef _$GetMetrics = AutoDisposeNotifier<AsyncValue<List<Metrics>>>;
+typedef _$GetMetrics = Notifier<AsyncValue<List<Metrics>>>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

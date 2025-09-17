@@ -1,4 +1,5 @@
 import 'package:fitness/features/home/home.dart';
+import 'package:fitness/features/tabbed_home/tabbed_home.dart';
 import 'package:fitness/utilities/color_pallet.dart';
 import 'package:fitness/utilities/strings.dart';
 import 'package:flutter/material.dart';
@@ -52,7 +53,7 @@ class Fitness extends StatelessWidget {
           dividerColor: Colors.transparent,
         ),
       ),
-      home: Home(),
+      home: TabbedHome(),
     );
   }
 }

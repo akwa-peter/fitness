@@ -23,14 +23,19 @@ class _HomeState extends ConsumerState<Home>
     with SingleTickerProviderStateMixin {
   TabController? _activitiesTabController;
 
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
   @override
   void initState() {
     _activitiesTabController = TabController(length: 5, vsync: this);
     _activitiesTabController?.addListener(() {
       setState(() {});
-    });
-    WidgetsBinding.instance.addPostFrameCallback((callback) {
-      ref.read(getMetricsProvider.notifier).getMetrics();
     });
     super.initState();
   }
@@ -40,6 +45,7 @@ class _HomeState extends ConsumerState<Home>
     var metricsState = ref.watch(getMetricsProvider);
 
     return Scaffold(
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: Column(
         children: [
           Container(

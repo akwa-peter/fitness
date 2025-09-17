@@ -6,7 +6,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'metrics_provider.g.dart';
 
-@riverpod
+@Riverpod(keepAlive: true)
 class GetMetrics extends _$GetMetrics {
   AsyncValue<List<Metrics>> build() {
     return const AsyncLoading();

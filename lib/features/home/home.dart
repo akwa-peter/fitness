@@ -23,14 +23,6 @@ class _HomeState extends ConsumerState<Home>
     with SingleTickerProviderStateMixin {
   TabController? _activitiesTabController;
 
-  int _selectedIndex = 0;
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
   @override
   void initState() {
     _activitiesTabController = TabController(length: 5, vsync: this);

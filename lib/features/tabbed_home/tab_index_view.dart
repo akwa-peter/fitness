@@ -8,9 +8,9 @@ class GetIndexView extends StatelessWidget {
   final int? index;
 
   const GetIndexView({
-    Key? key,
+    super.key,
     this.index,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
